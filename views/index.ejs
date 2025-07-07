@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>OTP Tester | NongKripto.id</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- ⛔ no zoom -->
+  
+  <!-- Bootstrap + AOS + Toastr -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- AdSense (Google) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    crossorigin="anonymous"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <style>
+    body {
+      background: #f9f9f9;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .console-box {
+      background: #000;
+      color: #0f0;
+      font-family: monospace;
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Iklan responsive horizontal -->
+    <div class="text-center mb-3" data-aos="fade-down">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"  <!-- GANTI DENGAN KODE ADSENSE -->
+        data-ad-slot="1234567890"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    </div>
+
+    <h2 data-aos="fade-up" class="mb-4 text-center">
+      🚀 OTP Tester <br><small class="text-primary">NongKripto.id</small>
+    </h2>
+
+    <form id="otpForm" data-aos="fade-up">
+      <div class="mb-3">
+        <label class="form-label">Nomor HP</label>
+        <input type="text" class="form-control" id="phone" placeholder="08123456789" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Delay (detik)</label>
+        <input type="number" class="form-control" id="delay" value="2" min="1" required>
+      </div>
+      <button type="submit" class="btn btn-success">Kirim OTP</button>
+    </form>
+
+    <!-- Box log -->
+    <div class="console-box" id="console" data-aos="zoom-in" data-aos-delay="200"></div>
+
+    <!-- Iklan bawah -->
+    <div class="mt-4 text-center" data-aos="fade-up">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"  <!-- GANTI DENGAN KODE ADSENSE -->
+        data-ad-slot="0987654321"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+
+  <!-- Script CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- SPA Script -->
+  <script src="/main.js"></script>
+
+  <!-- Inisialisasi iklan -->
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</body>
+</html>

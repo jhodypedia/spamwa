@@ -54,8 +54,8 @@ otp-web/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/otp-web.git
-cd otp-web
+git clone https://github.com/jhodypedia/spamwa.git
+cd spamwa
 
 # 2. Install dependencies
 npm install
